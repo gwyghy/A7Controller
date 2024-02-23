@@ -24,6 +24,8 @@ linux-gnueabi-oe-g++ {
             DEFINES += I386
             #DEFINES += QT_NO_DEBUG_OUTPUT
 
+            QMAKE_LFLAGS += "-Wl,-rpath=../../lib"
+
             INCLUDE_PATH= $$PWD/../../../install_arm/include
             LIB_PATH = $$PWD/../../../install_arm/lib
 
